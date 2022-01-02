@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@font-face {
+  font-family: 'Port Out';
+  src: url("../public/fonts/Portico Outline.otf");
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cursor {
+  position: fixed;
+  mix-blend-mode: difference;
+  width: 30px;
+  height: 30px;
+  left: var(--x);
+  top: var(--y);
+  border-radius: 45px;
+  background-color: white;
+  display: none;
+}
+
+.homeBanner {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0e0e1e;
+}
+
+.homeBanner .homeBanner_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../public/dotbg.svg");
+  background-size: 15vh;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-transform: skew(var(--x), var(--y));
+          transform: skew(var(--x), var(--y));
+  overflow-y: hidden;
+}
+
+.homeBanner .homeBanner_fg {
+  width: 720px;
+  max-width: 80%;
+  height: 420px;
+  background: linear-gradient(45deg, #00eeff, #f700ff, #eafaea);
+}
+
+.homeBanner .homeBanner_fg .homeBanner_fg_inner {
+  background: #0e0e1e;
+  margin: 32px 2px;
+  height: 386px;
+}
+
+.homeBanner .homeBanner_fg .homeBanner_fg_inner .name {
+  color: #00eeff;
+  font-family: "Port Out";
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.homeBanner .homeBanner_fg .homeBanner_fg_inner .namePhone {
+  color: #00eeff;
+  font-family: "Port Out";
+  font-size: 6vh;
+  text-align: center;
+}
+
+.homeBanner .homeBanner_fg .homeBanner_fg_inner .tags {
+  text-align: center;
+}
+
+.homeBanner .homeBanner_fg .homeBanner_fg_inner .tags .tag {
+  color: #f700ff;
+  font-family: "Caveat";
+  font-size: 4vh;
+  margin: 0px 18px;
+}
+
+.pivot_container {
+  background: inherit;
+  position: absolute;
+  top: 0px;
+}
+
+.pivot_container a {
+  color: #ff88ff;
+  font-family: "Blinker";
+}
+
+.pivot_container a img, .pivot_container a .image {
+  width: 28px;
+}
+
+.pivot_container a:hover {
+  border-bottom: 3px solid #f700ff;
+}
+
+.projectsBanner {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1e1e1e;
+}
+
+.projectsBanner .name {
+  color: #f700ff;
+  font-family: "Port Out";
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.projectsBanner .projects {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.projectsBanner .projects .subName {
+  color: #faccfa;
+  font-family: "Caveat";
+  font-size: 2.6rem;
+}
+
+.projectsBanner .projects .project-preview {
+  width: 100%;
+  height: 80vh;
+  border: 6px solid #acacac;
+  border-radius: 10px;
+}
+
+.projectsBanner .projects .project-preview .project-title {
+  font-size: 6vh;
+  color: #fafafa;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+.projectsBanner .projects .project-preview .project-description {
+  font-size: 22px;
+  width: 50%;
+  text-align: justify;
+  color: #fafafa;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+.projectsBanner .projects .project-preview .project-link {
+  color: #fafafa;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.projectsBanner .projects .project-preview .project-link button {
+  background: linear-gradient(60deg, #d900ff 25%, #00b7ff 100%);
+  color: #fafafa;
+  font-size: 16px;
+  -webkit-box-shadow: 2px 2px 10px #8c8cac;
+          box-shadow: 2px 2px 10px #8c8cac;
+}
+
+.projectsBanner .projects .project {
+  position: relative;
+  width: 10vw;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  margin-left: 30px;
+  top: -180px;
+}
+
+.projectsBanner .projects .project img {
+  display: block;
+  -webkit-box-shadow: 3px -3px 9px #0e0e0e, -3px 3px 9px #0e0e0e;
+          box-shadow: 3px -3px 9px #0e0e0e, -3px 3px 9px #0e0e0e;
+  border-radius: 12px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.projectsBanner .projects .project img:hover {
+  -webkit-box-shadow: 5px -5px 12px #0e0e0e, -5px 5px 12px #0e0e0e;
+          box-shadow: 5px -5px 12px #0e0e0e, -5px 5px 12px #0e0e0e;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.projectsBanner .projects .project p {
+  color: #ffffff;
+  font-family: "Blinker";
+  font-size: 18px;
+  text-align: center;
+  margin: 12px auto;
+}
+
+.aboutBanner {
+  background: #0e0e1e;
+  min-height: 100vh;
+}
+
+.aboutBanner .aboutBanner_content {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 160px;
+}
+
+.aboutBanner .aboutBanner_content .name {
+  color: #ff88ff;
+  font-family: "Caveat";
+  font-size: 3.6rem;
+}
+
+.aboutBanner .aboutBanner_content .aboutBanner_content_text {
+  color: #fb7bff;
+  font-family: "Blinker";
+  font-size: 1.6rem;
+  text-align: justify;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.aboutBanner .aboutBanner_content .aboutLinks {
+  color: #faccfa;
+}
+
+.aboutBanner .aboutBanner_content .aboutLinks a {
+  font-size: 3rem;
+}
+
+.aboutBanner .aboutBanner_image {
+  width: 70%;
+  display: block;
+  margin-left: 0px;
+  margin-top: 140px;
+  background-size: contain;
+  background-position: center -22px;
+  overflow-y: hidden;
+}
+
+@media (min-width: 280px) and (max-width: 639px) {
+  .tags {
+    margin: 30px 0px;
+  }
+  .tags .tag {
+    display: block;
+  }
+}
+/*# sourceMappingURL=globals.css.map */

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
+
+
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.homeBanner{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #0e2e1e;
+  cursor: none;
+}
+
+.homeBanner:before {
+  content:"";
+  position:absolute;
+  z-index:999;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0; 
+  background:
+  radial-gradient(farthest-side ,#fff 95%,transparent 100%)
+    calc(var(--x) - 7em) calc(var(--y) - 7em)/14em 14em  fixed no-repeat;
+  mix-blend-mode:difference;
+  filter: saturate(225%);
+}
+.homeBanner_fg{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.name{
+  font-size: 16vh;
+  font-weight: bold;
+  color: #fcfcfc;
+  position: absolute;
+  top: 36vh;
+  text-align: center;
+  font-family: 'Blinker', sans-serif;
+}
+.homeBanner_bg{
+  width: 100%;
+  height: 102vh;
+  margin-top: -10px;
+  background-color: #0e1e1e;
+  filter: blur(25px) saturate(225%);
+}
+
+/*----------------------------------------------------------------*/
+.object1{
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: -120px;
+  left: -120px;
+  background-color: #219073;
+  border-radius: 50%;
+  animation: move1 100s linear infinite alternate-reverse;
+}
+@keyframes move1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(25px, 50px);
+  }
+  50% {
+    transform: translate(50px, -50px);
+  }
+  75% {
+    transform: translate(25px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }  
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+.object2{
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50vh;
+  left: -30px;
+  background-color: #f53c79;
+  border-radius: 50%;
+  animation: move2 40s linear infinite alternate-reverse;
+}
+@keyframes move2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(25px, -50px);
+  }
+  50% {
+    transform: translate(-50px, 50px);
+  }
+  75% {
+    transform: translate(25px, -50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }  
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+.object3{
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -60px;
+  left: 77vw;
+  background-color: #2e8fdf;
+  border-radius: 50%;
+  animation: move3 30s linear infinite alternate-reverse;
+}
+@keyframes move3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-25px, 50px);
+  }
+  50% {
+    transform: translate(50px, 50px);
+  }
+  75% {
+    transform: translate(-25px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }  
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+.object4{
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: 36vh;
+  left: 50vw;
+  background-color: #79691d;
+  border-radius: 50%;
+  animation: move4 80s linear infinite alternate-reverse;
+}
+@keyframes move4 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(25px, 50px);
+  }
+  50% {
+    transform: translate(0px, -50px);
+  }
+  75% {
+    transform: translate(-25px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }  
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+.object5{
+  display: block;
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  top: 2vh;
+  left: 45vw;
+  background-color: #a44ddb;
+  border-radius: 50%;
+  animation: move5 40s linear infinite alternate-reverse;
+}
+@keyframes move5 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-30px, -50px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }  
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+.object6{
+  display: block;
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  top: 47vh;
+  left: 35vw;
+  background-color: #63f8b2;
+  border-radius: 50%;
+  animation: move6 120s linear infinite alternate-reverse;
+}
+@keyframes move6 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-40px, 50px);
+  }
+  50% {
+    transform: translate(0px, 100px);
+  }
+  75% {
+    transform: translate(30px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }  
+}
