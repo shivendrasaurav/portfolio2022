@@ -6,8 +6,61 @@ import AppProjects from './templates/AppProjects';
 import ToolsProjects from './templates/ToolsProjects';
 import HomeBanner from './templates/HomeBanner';
 import AboutBanner from './templates/AboutBanner';
+import { useEffect } from 'react';
 
 const Home = () => {
+  
+  useEffect(() => {
+    //delay till the page is loaded
+    setTimeout(() => {
+      fadeinhome();
+    }, 1000);
+
+    //run a function when window is scrolled by n pixels
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        showhideapps();
+      }
+      if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
+        showhidewebsites();
+      }
+      if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+        showhidetools();
+      }
+      if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
+        fadeinabout();
+      }
+
+    }
+  }, []);
+
+  var projScrollCnt=0;
+
+  const fadeinhome = () => {
+    //add class to home banner
+    document.getElementById('home').classList.add('fadein');
+    document.getElementById('home').classList.remove('fadeout');
+  }
+  const fadeinabout = () => {
+    //add class to about banner
+    document.getElementById('about').classList.add('fadeininverse');
+    document.getElementById('about').classList.remove('fadeoutinverse');
+  }
+
+  const showhideapps = () => {
+    document.getElementById('projectsApps').classList.add('slidein');
+    document.getElementById('projectsApps').classList.remove('slideout');
+  }
+  const showhidewebsites = () => {
+    document.getElementById('projectsWeb').classList.add('slideininverse');
+    document.getElementById('projectsWeb').classList.remove('slideoutinverse');
+  }
+  const showhidetools = () => {
+    document.getElementById('projectsTools').classList.add('slidein');
+    document.getElementById('projectsTools').classList.remove('slideout');
+  }
 
   return (
     <div>
@@ -18,7 +71,9 @@ const Home = () => {
       </Head>
       <div id="top"></div>
 
-      <HomeBanner/>
+      <div id='home' className='fadeout'>
+        <HomeBanner/>
+      </div>
       
 
       <div className="projectsBanner" id="projects">
@@ -26,15 +81,25 @@ const Home = () => {
         <h1 className="name">Projects</h1>
         <br/><br/>
 
-        <AppProjects/>
+        
+        <div id='projectsApps' className='slideout'>
+          <AppProjects/>
+        </div>
 
-        <WebsitesProjects />
+        <div id='projectsWeb' className='slideoutinverse'>
+          <WebsitesProjects />
+        </div>
 
-        <ToolsProjects />
+        <div id='projectsTools' className='slideout'>
+          <ToolsProjects />
+        </div>
+
 
       </div>
 
-      <AboutBanner/>
+      <div id='about' className='fadeoutinverse'>
+        <AboutBanner/>
+      </div>
 
       <div id="cursor" className="cursor"></div>
 

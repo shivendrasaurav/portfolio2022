@@ -46,11 +46,11 @@ const ToolsProjects = () => {
           <h2 className="subName">Tools</h2>
 
           <div className="project-preview" id="cover2" style={{background: "url('"+webSiteCover+"')", backgroundSize: "cover", backgroundPosition: "center"}}>
-            <div className="project-preview-content" style={{width: "100%", height: "100%", backdropFilter: "blur(25px)", position: "relative", top: "-10px"}}>
-                <h1 className="project-title" id="name2">{webSiteName}</h1>
-                <p className="project-description" id="desc2">{webSiteDesc}</p>
+          </div>
+          <div className="project-preview-content">
+                <h1 className="project-title" id="name2" style={{color: "black"}}>{webSiteName}</h1>
+                <p className="project-description" id="desc2" style={{color: "black"}}>{webSiteDesc}</p>
                 <a className="project-link" id="link2" href={webSiteLink} target="_blank" rel="noreferrer" ><button id="link-btn">Visit Project</button></a>
-            </div>
           </div>
 
           <div className="project" onMouseOver={setData12} >

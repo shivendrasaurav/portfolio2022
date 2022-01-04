@@ -19,8 +19,8 @@ const WebsitesProjects = () => {
     }
 
     const setData2 = () => {
-      document.getElementById("name").style.color = "white";
-      document.getElementById("desc").style.color = "white";
+      document.getElementById("name").style.color = "black";
+      document.getElementById("desc").style.color = "black";
       document.getElementById("name").innerHTML=(project["TEDxREVA University"][0]);
       document.getElementById("desc").innerHTML=(project["TEDxREVA University"][1]);
       document.getElementById("link").setAttribute("href", (project["TEDxREVA University"][2]));
@@ -68,18 +68,18 @@ const WebsitesProjects = () => {
           <h2 className="subName">Websites</h2>
 
           <div className="project-preview" id="cover" style={{background: "url('"+webSiteCover+"')", backgroundSize: "cover", backgroundPosition: "0, -120px"}}>
-            <div className="project-preview-content" style={{width: "100%", height: "100%", backdropFilter: "blur(25px)", position: "relative", top: "-10px"}}>
+          </div>
+          <div className="project-preview-content">
                 <h1 className="project-title" id="name">{webSiteName}</h1>
                 <p className="project-description" id="desc">{webSiteDesc}</p>
                 <a className="project-link" id="link" href={webSiteLink} target="_blank" rel="noreferrer" ><button>Visit Project</button></a>
-            </div>
           </div>
 
           <div className="project" onMouseOver={setData1} >
             <img src="projects/fdweb.png" />
           </div>
           <div className="project" onMouseOver={setData2} >
-            <img src="projects/tedx.png" />
+            <img src="projects/ijle.png" />
           </div>
           <div className="project" onMouseOver={setData3} >
             <img src="projects/rhapp.png" />

@@ -17,7 +17,7 @@ const HomeBanner =() => {
         <PivotMenu />
 
         <div className="homeBanner_bg" id="skew">
-          <img src="confetti.svg" style={{transform: "rotate(180deg)", filter: "invert(100%) saturate(225%)", width:  "94%"}}/>
+          <img src="confetti.svg" style={{transform: "rotate(180deg)", filter: "invert(100%) saturate(225%)", width:  "94%"}} className='small0'/>
         </div>
         <div className="homeBanner_fg">
           <div className="homeBanner_fg_inner">

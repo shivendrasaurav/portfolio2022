@@ -80,13 +80,13 @@ const AppProjects = () => {
           <h2 className="subName">Apps</h2>
 
           <div className="project-preview" id="cover1" style={{background: "url('"+webSiteCover+"')", backgroundSize: "cover", backgroundPosition: "center"}}>
-            <div className="project-preview-content" style={{width: "100%", height: "100%", backdropFilter: "blur(25px)", position: "relative", top: "-10px"}}>
+          </div>
+          <div className="project-preview-content">
                 <h1 className="project-title" id="name1" style={{color: "black"}}>{webSiteName}</h1>
                 <p className="project-description" id="desc1" style={{color: "black"}}>{webSiteDesc}</p>
                 <a className="project-link" id="link1" href={webSiteLink} target="_blank" rel="noreferrer" ><button>Visit Project</button></a>
-            </div>
           </div>
-
+          
           <div className="project" onMouseOver={setData6} >
             <img src="projects/corona.png" />
           </div>
