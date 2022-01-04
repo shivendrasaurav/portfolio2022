@@ -370,11 +370,9 @@ body {
 
 /*Responsive*/
 @media (min-width: 280px) and (max-width: 639px) {
-  .slidein, .slideininverse {
+  .slideout, .slideoutinverse, .slidein, .slideininverse, .fadeout, .fadein {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    -webkit-transition: 1s;
-    transition: 1s;
   }
   .tags {
     margin: 30px 0px;

@@ -115,17 +115,17 @@ const Home = () => {
 
       <div id="cursor" className="cursor"></div>
 
-      <div className="modal_container large0" id="mod1">  
+      <div className="modal_container small0 medium0 large0" id="mod1">  
         <div className="modal_content zi3">  
           <div className="modal_pane large12">  
             <span className="modal_title">Responsive Warning</span>  
             <button className="mod_close_btn" onClick={closeMod}>X</button>  
           </div>  
           <div className="modal_data">  
-            <h2>
+            <p>
               Even though we have tried our best to provide a good user experience in Small Devices like mobile phones or tablets, 
               We strongly recommend that you use a computer or laptop for viewing this website as it is intended for best experience.
-            </h2>  
+            </p>  
           </div>  
         </div>  
       </div> 
