@@ -9,7 +9,7 @@ const AboutBanner =() => {
     skew.style.setProperty('--y',(e.clientY/540)+'deg');
 
     skew.style.setProperty('--a',(e.clientX/128)+'px');
-    skew.style.setProperty('--b',(e.clientY/64)+'px');
+    skew.style.setProperty('--b',(e.clientY/32)+'px');
   }
 
   return(
@@ -30,7 +30,7 @@ const AboutBanner =() => {
               <Link href="mailto:shivendrasaurav@gmail.com"><a target="blank" className="pivot_button"><img className="icon" src="/socials/mail.png" /></a></Link>
               <Link href="https://www.youtube.com/c/thecodedrop"><a target="blank" className="pivot_button"><img className="icon" src="/socials/youtube.png" /></a></Link>
               <br/><br/>
-              <Link href="" target="blank"><button className="secondary_blue">Resume</button></Link>
+              <Link href="https://shivendrasaurav.github.io/resume"><a target="blank"><button className="secondary_blue">Resume</button></a></Link>
             </div>
             <br/><br/>
           </div>
@@ -44,6 +44,7 @@ const AboutBanner =() => {
           </div>
         </div>
 
+        <br/><br/>
         <a href='#top' className='b2top'>
           <i className="ms-Icon ms-Icon--ChevronUp icon-large" aria-hidden="true"></i>
         </a>

@@ -12,6 +12,9 @@ const Home = () => {
   
   useEffect(() => {
     //delay till the page is loaded
+
+    openMod();
+
     setTimeout(() => {
       fadeinhome();
     }, 1000);
@@ -20,16 +23,18 @@ const Home = () => {
     window.onscroll = function() {myFunction()};
 
     function myFunction() {
-      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+      var vh = window.screen.height;
+
+      if (document.body.scrollTop > (70*vh)/100 || document.documentElement.scrollTop > (70*vh)/100) {
         showhideapps();
       }
-      if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
+      if (document.body.scrollTop > (140*vh)/100 || document.documentElement.scrollTop > (140*vh)/100) {
         showhidewebsites();
       }
-      if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+      if (document.body.scrollTop > (210*vh)/100 || document.documentElement.scrollTop > (210*vh)/100) {
         showhidetools();
       }
-      if (document.body.scrollTop > 3000 || document.documentElement.scrollTop > 3000) {
+      if (document.body.scrollTop > (280*vh)/100 || document.documentElement.scrollTop > (280*vh)/100) {
         fadeinabout();
       }
 
@@ -37,6 +42,13 @@ const Home = () => {
   }, []);
 
   var projScrollCnt=0;
+
+  const openMod = () => {
+    document.getElementById("mod1").style.display = "block";
+  }
+  const closeMod = () => {
+    document.getElementById("mod1").style.display = "none";
+  }
 
   const fadeinhome = () => {
     //add class to home banner
@@ -102,6 +114,21 @@ const Home = () => {
       </div>
 
       <div id="cursor" className="cursor"></div>
+
+      <div className="modal_container large0" id="mod1">  
+        <div className="modal_content zi3">  
+          <div className="modal_pane large12">  
+            <span className="modal_title">Responsive Warning</span>  
+            <button className="mod_close_btn" onClick={closeMod}>X</button>  
+          </div>  
+          <div className="modal_data">  
+            <h2>
+              Even though we have tried our best to provide a good user experience in Small Devices like mobile phones or tablets, 
+              We strongly recommend that you use a computer or laptop for viewing this website as it is intended for best experience.
+            </h2>  
+          </div>  
+        </div>  
+      </div> 
 
     </div>
   )
