@@ -75,7 +75,7 @@ const Home = () => {
             <ul className='projDetails'>
               {resData.project1.map((item, index) => {
                 //linkify 1st item with href as 2nd item
-                if(index == 0) return <li key={index}><a href={resData.project1[1]} target="_blank">{resData.project1[0]}</a></li>
+                if(index == 0) return <li key={index}><a href={resData.project1[1]} target="_blank" rel="noreferrer">{resData.project1[0]}</a></li>
                 //skip 2nd item
                 if(index == 1) return;
                 return <li key={index}>{item}</li>
@@ -84,7 +84,7 @@ const Home = () => {
             <ul className='projDetails'>
               {resData.project2.map((item, index) => {
                 //linkify 1st item with href as 2nd item
-                if(index == 0) return <li key={index}><a href={resData.project2[1]} target="_blank">{resData.project2[0]}</a><button className='tag'>Hackathon Winner</button></li>
+                if(index == 0) return <li key={index}><a href={resData.project2[1]} target="_blank" rel="noreferrer">{resData.project2[0]}</a><button className='tag'>Hackathon Winner</button></li>
                 //skip 2nd item
                 if(index == 1) return;
                 return <li key={index}>{item}</li>
@@ -93,7 +93,7 @@ const Home = () => {
             <ul className='projDetails'>
               {resData.project3.map((item, index) => {
                 //linkify 1st item with href as 2nd item
-                if(index == 0) return <li key={index}><a href={resData.project3[1]} target="_blank">{resData.project3[0]}</a><button className='tag'>Hackathon Winner</button></li>
+                if(index == 0) return <li key={index}><a href={resData.project3[1]} target="_blank" rel="noreferrer">{resData.project3[0]}</a><button className='tag'>Hackathon Winner</button></li>
                 //skip 2nd item
                 if(index == 1) return;
                 return <li key={index}>{item}</li>
