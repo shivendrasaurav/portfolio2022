@@ -30,7 +30,7 @@ const AboutBanner =() => {
               <Link href="mailto:shivendrasaurav@gmail.com"><a target="blank" className="pivot_button"><img className="icon" src="/socials/mail.png" /></a></Link>
               <Link href="https://www.youtube.com/c/thecodedrop"><a target="blank" className="pivot_button"><img className="icon" src="/socials/youtube.png" /></a></Link>
               <br/><br/>
-              <Link href="https://shivendrasaurav.github.io/resume"><a target="blank"><button className="secondary_blue">Resume</button></a></Link>
+              <Link href="/resume"><a><button className="secondary_blue">Resume</button></a></Link>
             </div>
             <br/><br/>
           </div>
