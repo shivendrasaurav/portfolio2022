@@ -14,15 +14,14 @@ const Home = () => {
 
         <div className="linksWrapper">
             <div className="column large6 medium8 small12 center ta_center">
-                <img src="/linksdp.jpg" /><br/>
+                <img src="/linksdp.jpg" alt="linksdp" /><br/>
                 <h1 className='ta_center'>Shivendra Saurav</h1><br/>
-                <Link href="https://www.youtube.com/c/thecodedrop"><a target="_blank" rel="noreferrer"><i class="fab fa-youtube"></i></a></Link>
-                <Link href="https://github.com/shivendrasaurav"><a target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a></Link>
-                <Link href="https://www.linkedin.com/in/shivendra-saurav-80a8ba191/"><a target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a></Link><br/><br/>
-                <Link href="https://www.instagram.com/shivendrasaurav/"><a target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a></Link>
-                <Link href="https://twitter.com/ShivendraSaurav"><a target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a></Link>
-                <Link href="https://www.facebook.com/shivendra.saurav"><a target="_blank" rel="noreferrer"><i class="fab fa-facebook"></i></a></Link><br/><br/>
-
+                <Link href="https://www.youtube.com/c/thecodedrop"><a target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></Link>
+                <Link href="https://github.com/shivendrasaurav"><a target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a></Link>
+                <Link href="https://www.linkedin.com/in/shivendra-saurav-80a8ba191/"><a target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a></Link><br/><br/>
+                <Link href="https://www.instagram.com/shivendrasaurav/"><a target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></Link>
+                <Link href="https://twitter.com/ShivendraSaurav"><a target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></Link>
+                <Link href="https://www.facebook.com/shivendra.saurav"><a target="_blank" rel="noreferrer"><i className="fab fa-facebook"></i></a></Link><br/><br/>
             </div>
         </div>        
 
