@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Blinker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker&family=Caveat&family=Rubik&family=Montserrat&family=Oxanium&display=swap");
 @font-face {
   font-family: 'Port Out';
   src: url("../public/fonts/Portico Outline.otf");
@@ -433,5 +432,172 @@ body {
 #aboutImg {
   -webkit-transform: skew(var(--x), var(--y)) translate(var(--a), var(--b));
           transform: skew(var(--x), var(--y)) translate(var(--a), var(--b));
+}
+
+/*==========================================================Resume==========================================================*/
+.resumeWrapper {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.resumeWrapper .resTitle h2, .resumeWrapper .resTitle h4 {
+  font-family: 'Rubik';
+  color: #000;
+}
+
+.resumeWrapper .resTitle h2 {
+  font-size: 3.6rem;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.resumeWrapper .resTitle h4 {
+  font-size: 2.4rem;
+  margin-top: 0px;
+}
+
+.resumeWrapper .resTitle a {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding-right: 40px;
+}
+
+.resumeWrapper .col1 {
+  width: 60%;
+}
+
+.resumeWrapper .col2 {
+  width: 40%;
+}
+
+.resumeWrapper .col1, .resumeWrapper .col2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.resumeWrapper .col1 hr, .resumeWrapper .col2 hr {
+  border: none;
+  height: 2.5px;
+  background: #000;
+  width: 60%;
+}
+
+.resumeWrapper .col1 h1, .resumeWrapper .col2 h1 {
+  font-family: 'Rubik';
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.resumeWrapper .col1 h2, .resumeWrapper .col2 h2 {
+  font-family: 'Montserrat';
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.resumeWrapper .col1 h3, .resumeWrapper .col2 h3 {
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  color: #00a2ff;
+}
+
+.resumeWrapper .col1 h4, .resumeWrapper .col2 h4 {
+  font-family: 'Montserrat';
+  font-size: 0.8rem;
+  color: #000;
+  line-height: 0.5;
+}
+
+.resumeWrapper .col1 h5, .resumeWrapper .col2 h5 {
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.resumeWrapper .col1 h6, .resumeWrapper .col2 h6 {
+  font-family: 'Montserrat';
+  font-size: 0.8rem;
+  color: #00a2ff;
+}
+
+.resumeWrapper .col1 p, .resumeWrapper .col2 p {
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.resumeWrapper .col1 p.desc, .resumeWrapper .col2 p.desc {
+  font-size: 0.9rem;
+}
+
+.resumeWrapper .col1 .skills li, .resumeWrapper .col2 .skills li {
+  display: inline-block;
+  list-style: none;
+  font-size: 1rem;
+  border: 1px solid #00a2ff;
+  padding: 5px 10px;
+  margin: 5px;
+  font-family: 'Rubik';
+}
+
+.resumeWrapper .col1 .skills li:hover, .resumeWrapper .col2 .skills li:hover {
+  background: #00a2ff;
+  color: #fff;
+}
+
+.resumeWrapper .col1 .expDetails li, .resumeWrapper .col2 .expDetails li {
+  margin: 0px 20px;
+  padding: 4px 10px;
+  font-family: 'Rubik';
+}
+
+.resumeWrapper .col1 .expDetails li:nth-child(1), .resumeWrapper .col2 .expDetails li:nth-child(1) {
+  line-height: 1.4;
+  margin-left: -10px;
+  list-style: none;
+}
+
+.resumeWrapper .col1 .projDetails li, .resumeWrapper .col2 .projDetails li {
+  margin: 0px 20px;
+  padding: 4px 10px;
+  font-family: 'Rubik';
+}
+
+.resumeWrapper .col1 .projDetails li:nth-child(1), .resumeWrapper .col2 .projDetails li:nth-child(1) {
+  line-height: 1.4;
+  margin-left: -10px;
+  list-style: none;
+}
+
+.resumeWrapper .col1 .projDetails li:nth-child(1) a, .resumeWrapper .col2 .projDetails li:nth-child(1) a {
+  color: #0e1e1e;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.resumeWrapper .col1 .tag, .resumeWrapper .col2 .tag {
+  background-color: #ffe600;
+  border-radius: 24px;
+  color: #0e1e1e;
+  font-family: "Caveat";
+  font-size: 1.2rem;
+  margin: 0px 22px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+/*Responsive*/
+@media (min-width: 280px) and (max-width: 639px) {
+  .resumeWrapper .col1, .resumeWrapper .col2 {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=globals.css.map */

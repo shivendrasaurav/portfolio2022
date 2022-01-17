@@ -9,7 +9,7 @@ const PivotMenu =() => {
         <Link href="https://in.linkedin.com/in/shivendra-saurav-80a8ba191"><a target="blank" className="pivot_button right"><img src="/socials/linkedin.png" /></a></Link>
         <Link href="mailto:shivendrasaurav@gmail.com"><a target="blank" className="pivot_button right"><img src="/socials/mail.png" /></a></Link>
         <Link href="https://www.youtube.com/c/thecodedrop"><a target="blank" className="pivot_button right"><img src="/socials/youtube.png" /></a></Link>
-        <Link href="https://shivendrasaurav.github.io/resume"><a target="blank" className="pivot_button right small0">Resume</a></Link>
+        <Link href="/resume"><a target="blank" className="pivot_button right small0">Resume</a></Link>
         <Link href="#projects"><a className="pivot_button right small0">Projects</a></Link>
         <Link href="#about"><a className="pivot_button right small0">About</a></Link>
       </div> 

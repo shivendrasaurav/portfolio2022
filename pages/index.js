@@ -68,7 +68,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Shivendra Saurav</title>
+        <title>Shivendra Saurav - Portfolio</title>
         <meta name="description" content="I am a full stack developer with a passion for creating beautiful and intuitive user interfaces. I have a strong background in web development and have worked on a wide range of projects. I am currently working as Senior Software Engineer at Larson and Tourbo Infotech." />
         <link rel="icon" href="/neonLogo.png" />
       </Head>

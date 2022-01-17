@@ -1,0 +1,20 @@
+{
+    "name": "Shivendra Saurav",
+    "title": "Full Stack Developer",
+    "phone": "+917348830375",
+    "email": "shivendrasaurav@gmail.com",
+    "website": "shivendrasaurav.vercel.app",
+    "location": "Bangalore, India",
+    "summary": "Full Stack Developer with experience in JavaScript, Python and GoLang. Led development of a project for a publication journal which was deemed 'Gold Standard' by the client. Well aqcuainted with the aspects of UI/UX Design.",
+    "education": ["B. Tech in Computer Science and Engineering", "REVA University", "2017-2021", "8.23/10.0"],
+    "course1": ["Full Stack Web Development with React", "The Hong Kong University of Science and Technology - Coursera", "May, 2020", "100%"],
+    "course2": ["UI/UX Design", "California Institute of the Arts - Coursera", "April, 2020", "90.62%"],
+    "client": ["HTML", "CSS", "JS", "React", "Next JS", "Tailwind", "Bootstrap", "Fluent Design for Web", "Materialize", "Foundation"],
+    "server": ["Node JS", "Express JS", "PHP", "Python", "GoLang", "Flask", "HTTP/S", "Service Workers", "RESTful APIs"],
+    "database": ["MySQL", "MongoDB", "PostgreSQL", "Neo4j", "Git", "GitHub", "Postman", "Heroku", "Netlify", "Digital Ocean", "BrowserStack", "Sauce Labs"],
+    "experience": ["Senior Software Enginner", "Nov, 2021 - Ongoing", "Graduate Trainee Engineer", "July, 2021 - Nov, 2021", "Larson & Tourbo Infotech"],
+    "expDetails": ["LTI is a global technology consulting and digital solutions company helping more than 460 clients in a converging world. With operations in 33 countries, we go the extra mile to assist our clients and accelerate their digital transformation.",  "Provided support to external clients who utilized our services by using automation anywhere", "To help with development and production of bot runners on automation anywhere platform", "To help with migration of bot runners from a11.x to a360"],
+    "project1": ["Fluent Design for Web", "https://fluentdesignforweb.github.io/v2/", "A responsive CSS framework developed to make it easier to develop websites and webapps.", "Can be integrated with a lot of major CSS Frameworks which makes it compatible with almost any project.", "It is designed to deliver near-native experiences regardless of device used to access it."],
+    "project2": ["Corona Rakshak", "https://shivendrasaurav.github.io/corona-rakshak/", "A covid-19 tracking mobile app which helps users maintain social distancing and access national[India] stats.", "Uses bluetooth to detect nearby devices and geolocation api to detect user's current location.", "Gives social distancing score based on how many devices which user interacted with where inside the user's social distancing radius."],
+    "project3": ["Smart Garbage Disposal System", "https://github.com/shivendrasaurav/smartdustbin", "An IOT Based project to optimize garbage collection and disposal in urban and sub urban areas.", "Uses different sensors and graph based algorithms to create dynamic routes for garbage collection.", "Helps minimize carbon footprints and fuel consumption using IOT devices and optimized ML algorithms."]
+}

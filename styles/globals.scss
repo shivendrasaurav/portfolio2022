@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker&family=Caveat&family=Rubik&family=Montserrat&family=Oxanium&display=swap');
 @font-face {
     font-family: 'Port Out';
     src: url('../public/fonts/Portico Outline.otf');
@@ -421,4 +420,166 @@ body{
 
 #aboutImg{
     transform: skew(var(--x), var(--y)) translate(var(--a), var(--b));
+}
+
+/*==========================================================Resume==========================================================*/
+
+.resumeWrapper{
+    min-height: 100vh;
+    background: #ffffff;
+
+        .resTitle{
+            h2, h4{
+                font-family: 'Rubik';
+                color: #000;
+            }
+            h2{
+                font-size: 3.6rem;
+                margin-top: 0px;
+                font-weight: bold;
+            }
+            h4{
+                font-size: 2.4rem;
+                margin-top: 0px;
+            }
+            a{
+                color: #000;
+                font-family: 'Montserrat';
+                font-size: 1.2rem;
+                text-decoration: none;
+                padding-right: 40px;
+            }
+        }
+        .col1{
+            width: 60%;
+        }
+        .col2{
+            width: 40%;
+        }
+        .col1, .col2{
+            display: inline-block;
+            vertical-align: top;
+
+            hr{
+                border: none;
+                height: 2.5px;
+                background: #000;
+                width: 60%;
+            }
+            h1{
+                font-family: 'Rubik';
+                font-size: 2rem;
+                color: #000;
+                font-weight: bold;
+            }
+            h2{
+                font-family: 'Montserrat';
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: #000;
+            }
+            h3{
+                font-family: 'Montserrat';
+                font-size: 1.1rem;
+                color: #00a2ff;
+            }
+            h4{
+                font-family: 'Montserrat';
+                font-size: 0.8rem;
+                color: #000;
+                line-height: 0.5;
+            }
+            h5{
+                font-family: 'Montserrat';
+                font-size: 1.1rem;
+                color: #000;
+                font-weight: bold;
+            }
+            h6{
+                font-family: 'Montserrat';
+                font-size: 0.8rem;
+                color: #00a2ff;
+            }
+            p{
+                font-family: 'Montserrat';
+                font-size: 1.1rem;
+                color: #000;
+            }
+            p.desc{
+                font-size: 0.9rem;
+            }
+            .skills{
+
+                li{
+                    display: inline-block;
+                    list-style: none;
+                    font-size: 1rem;
+                    border: 1px solid #00a2ff;
+                    padding: 5px 10px;
+                    margin: 5px;
+                    font-family: 'Rubik';
+
+                    &:hover{
+                        background: #00a2ff;
+                        color: #fff;
+                    }
+                }
+            }
+            .expDetails{
+                li{
+                    margin: 0px 20px;
+                    padding: 4px 10px;
+                    font-family: 'Rubik';
+
+                    &:nth-child(1){
+                        line-height: 1.4;
+                        margin-left: -10px;
+                        list-style: none;
+                    }
+                }
+            }
+            .projDetails{
+                li{
+                    margin: 0px 20px;
+                    padding: 4px 10px;
+                    font-family: 'Rubik';
+
+                    &:nth-child(1){
+                        line-height: 1.4;
+                        margin-left: -10px;
+                        list-style: none;
+
+                        a{
+                            color: #0e1e1e;
+                            font-family: "Montserrat";
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .tag{
+                background-color: #ffe600;
+                border-radius: 24px;
+                color: #0e1e1e;
+                font-family: "Caveat";
+                font-size: 1.2rem;
+                margin: 0px 22px;
+                transform: scale(0.9);
+            }
+    
+    }
+
+}
+
+/*Responsive*/
+@media (min-width: 280px) and (max-width: 639px) {
+    .resumeWrapper{
+        .col1, .col2{
+            width: 100%;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 }
