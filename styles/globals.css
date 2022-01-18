@@ -610,31 +610,64 @@ body {
   left: 0px;
   background: -webkit-gradient(linear, left top, right bottom, from(#0e1e1e), color-stop(#1e0e1e), to(#1e1e0e));
   background: linear-gradient(to bottom right, #0e1e1e, #1e0e1e, #1e1e0e);
+  background-attachment: fixed;
 }
 
 .linksWrapper .column {
-  margin-top: 20vh;
+  margin-top: 12vh;
   border-radius: 90px;
   padding: 40px;
 }
 
 .linksWrapper .column img {
-  width: 140px;
-  border-radius: 120px;
+  width: 125px;
+  border-radius: 80px;
   border: 4px solid #fafafa;
 }
 
 .linksWrapper .column h1 {
   font-family: 'Oxanium';
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #fafafa;
   font-weight: bold;
   margin-top: 20px;
 }
 
-.linksWrapper .column a {
-  font-size: 3rem;
+.linksWrapper .column .tabs a {
+  font-size: 1rem;
+  text-align: center;
+  background: #fafafa;
+  color: #0e0e0e;
+  font-family: 'Rubik';
+  text-decoration: none;
+  display: block;
+  margin: 10px auto;
+  padding: 6px 36px;
+  width: 320px;
+  height: auto;
+  border: 4px solid transparent;
+}
+
+.linksWrapper .column .tabs a:hover {
+  background: #00a2ff66;
+  color: #fff;
+  border: 4px solid #00a2ff;
+  -webkit-box-shadow: 4px 4px 2px #ff0077;
+          box-shadow: 4px 4px 2px #ff0077;
+}
+
+.linksWrapper .column .links {
+  margin-top: 30px;
+}
+
+.linksWrapper .column .links a {
+  font-size: 2rem;
   color: #fafafa;
   margin: 10px;
+  text-align: center;
+}
+
+.linksWrapper .column .links a:hover {
+  color: #00a2ff;
 }
 /*# sourceMappingURL=globals.css.map */

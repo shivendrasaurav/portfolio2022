@@ -132,7 +132,7 @@ const Home = () => {
         <br/><br/>
 
       </div>
-        
+      <div id="projectsApps"></div>
 
     </div>
   )
