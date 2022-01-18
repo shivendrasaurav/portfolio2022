@@ -21,7 +21,7 @@ const Home = () => {
                   <Link href="https://www.instagram.com/thecodedrop/"><a target="_blank" rel="noreferrer">The Code Drop Instagram Page</a></Link>
                   <Link href="https://www.youtube.com/c/thecodedrop?sub_confirmation=1"><a target="_blank" rel="noreferrer">Subscribe to The Code Drop</a></Link>
                   <Link href="https://open.spotify.com/playlist/5nJQF4ETfbHfQPYptWpf3B?si=991d747f7272444d"><a target="_blank" rel="noreferrer">Stories Music Here</a></Link>
-                  <Link href="https://www.youtube.com/c/UChMnoZDujceCRzarw2_aN8w?sub_confirmation=1"><a target="_blank" rel="noreferrer">The Code Drop Gaming</a></Link>
+                  <Link href="https://www.youtube.com/channel/UChMnoZDujceCRzarw2_aN8w?sub_confirmation=1"><a target="_blank" rel="noreferrer">The Code Drop Gaming</a></Link>
                 </div>
                 <div className="links">
                   <Link href="https://www.youtube.com/c/thecodedrop"><a target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a></Link>
