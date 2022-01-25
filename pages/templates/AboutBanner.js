@@ -25,12 +25,12 @@ const AboutBanner =() => {
             </p>
             <br/><br/>
             <div className='aboutLinks'>
-              <Link href="https://github.com/shivendrasaurav"><a target="blank" className="pivot_button"><img className="icon" src="/socials/github.png" /></a></Link>
-              <Link href="https://in.linkedin.com/in/shivendra-saurav-80a8ba191"><a target="blank" className="pivot_button"><img className="icon" src="/socials/linkedin.png" /></a></Link>
-              <Link href="mailto:shivendrasaurav@gmail.com"><a target="blank" className="pivot_button"><img className="icon" src="/socials/mail.png" /></a></Link>
-              <Link href="https://www.youtube.com/c/thecodedrop"><a target="blank" className="pivot_button"><img className="icon" src="/socials/youtube.png" /></a></Link>
+              <Link href="https://github.com/shivendrasaurav"><a target="blank" className="pivot_button"><i className='fab fa-github'></i></a></Link>
+              <Link href="https://in.linkedin.com/in/shivendra-saurav-80a8ba191"><a target="blank" className="pivot_button"><i className='fab fa-linkedin'></i></a></Link>
+              <Link href="mailto:shivendrasaurav@gmail.com"><a target="blank" className="pivot_button"><i className='fas fa-envelope'></i></a></Link>
+              <Link href="https://www.youtube.com/c/thecodedrop"><a target="blank" className="pivot_button"><i className='fab fa-youtube'></i></a></Link>
+              <Link href="/resume"><a target="blank" className="pivot_button"><i className='fas fa-play'></i></a></Link>
               <br/><br/>
-              <Link href="/resume"><a><button className="secondary_blue">Resume</button></a></Link>
             </div>
             <br/><br/>
           </div>

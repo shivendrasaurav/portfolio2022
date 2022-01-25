@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import WebsitesProjects from './templates/WebsitesProjects';
-import AppProjects from './templates/AppProjects';
-import ToolsProjects from './templates/ToolsProjects';
+import Projects from './templates/ProjectsComp';
 import HomeBanner from './templates/HomeBanner';
 import AboutBanner from './templates/AboutBanner';
 import { useEffect } from 'react';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Home = () => {
   
@@ -22,15 +21,24 @@ const Home = () => {
       var vh = window.screen.height;
 
       if (document.body.scrollTop > (70*vh)/100 || document.documentElement.scrollTop > (70*vh)/100) {
-        showhideapps();
+        showhideFDWEB();
       }
       if (document.body.scrollTop > (140*vh)/100 || document.documentElement.scrollTop > (140*vh)/100) {
-        showhidewebsites();
+        showhideCORONA();
       }
       if (document.body.scrollTop > (210*vh)/100 || document.documentElement.scrollTop > (210*vh)/100) {
-        showhidetools();
+        showhideRHAPP();
       }
       if (document.body.scrollTop > (280*vh)/100 || document.documentElement.scrollTop > (280*vh)/100) {
+        showhideIJLE();
+      }
+      if (document.body.scrollTop > (350*vh)/100 || document.documentElement.scrollTop > (350*vh)/100) {
+        showhideTCD();
+      }
+      if (document.body.scrollTop > (420*vh)/100 || document.documentElement.scrollTop > (420*vh)/100) {
+        showhideHISAB();
+      }
+      if (document.body.scrollTop > (490*vh)/100 || document.documentElement.scrollTop > (490*vh)/100) {
         fadeinabout();
       }
 
@@ -50,18 +58,32 @@ const Home = () => {
     document.getElementById('about').classList.remove('fadeoutinverse');
   }
 
-  const showhideapps = () => {
-    document.getElementById('projectsApps').classList.add('slidein');
-    document.getElementById('projectsApps').classList.remove('slideout');
+  const showhideFDWEB = () => {
+    document.getElementById('projectsFDWEB').classList.add('slidein');
+    document.getElementById('projectsFDWEB').classList.remove('slideout');
   }
-  const showhidewebsites = () => {
-    document.getElementById('projectsWeb').classList.add('slideininverse');
-    document.getElementById('projectsWeb').classList.remove('slideoutinverse');
+  const showhideCORONA = () => {
+    document.getElementById('projectsCORONA').classList.add('slideininverse');
+    document.getElementById('projectsCORONA').classList.remove('slideoutinverse');
   }
-  const showhidetools = () => {
-    document.getElementById('projectsTools').classList.add('slidein');
-    document.getElementById('projectsTools').classList.remove('slideout');
+  const showhideRHAPP = () => {
+    document.getElementById('projectsRHAPP').classList.add('slidein');
+    document.getElementById('projectsRHAPP').classList.remove('slideout');
   }
+
+  const showhideIJLE = () => {
+    document.getElementById('projectsIJLE').classList.add('slideininverse');
+    document.getElementById('projectsIJLE').classList.remove('slideoutinverse');
+  }
+  const showhideTCD = () => {
+    document.getElementById('projectsTCD').classList.add('slidein');
+    document.getElementById('projectsTCD').classList.remove('slideout');
+  }
+  const showhideHISAB = () => {
+    document.getElementById('projectsHISAB').classList.add('slideininverse');
+    document.getElementById('projectsHISAB').classList.remove('slideoutinverse');
+  }
+
 
   return (
     <div>
@@ -83,19 +105,30 @@ const Home = () => {
         <br/><br/>
 
         
-        <div id='projectsApps' className='slideout'>
-          <AppProjects/>
+        <div id='projectsFDWEB' className='slideout'>
+          <Projects name="FDWEB"  fcolor="#fafafa"/> 
+        </div>
+        
+        <div id='projectsCORONA' className='slideoutinverse'>
+          <Projects name="CORONA" fcolor="#1e1e1e"/> 
+        </div>
+        
+        <div id='projectsRHAPP' className='slideout'>
+          <Projects name="REVAHACKAPP" fcolor="#fafafa"/> 
         </div>
 
-        <div id='projectsWeb' className='slideoutinverse'>
-          <WebsitesProjects />
+        <div id='projectsIJLE' className='slideoutinverse'>
+          <Projects name="IJLE" fcolor="#1e1e1e"/> 
         </div>
 
-        <div id='projectsTools' className='slideout'>
-          <ToolsProjects />
+        <div id='projectsTCD' className='slideout'>
+          <Projects name="TCDBOX" fcolor="#fafafa"/> 
         </div>
 
-
+        <div id='projectsHISAB' className='slideoutinverse'>
+          <Projects name="HISABKITAB" fcolor="#1e1e1e"/> 
+        </div>
+        <br/><br/><br/><br/>
       </div>
 
       <div id='about' className='fadeoutinverse'>

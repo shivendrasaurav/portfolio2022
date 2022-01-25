@@ -135,12 +135,6 @@ body {
   font-weight: 600;
 }
 
-.projectsBanner .projects {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
-}
-
 .projectsBanner .projects .subName {
   color: #faccfa;
   font-family: "Caveat";
@@ -150,10 +144,13 @@ body {
 
 .projectsBanner .projects .project-preview {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   border-radius: 10px;
   border: 16px solid transparent;
   margin-top: 2vh;
+  margin: 8vh 0;
+  -webkit-transform: skew(var(--x), var(--y));
+          transform: skew(var(--x), var(--y));
 }
 
 .projectsBanner .projects .project-preview::before {
@@ -163,42 +160,43 @@ body {
   left: 5%;
   width: 90%;
   height: 84vh;
-  background: linear-gradient(45deg, #00ff95, #ff0077, #da8a8a);
   border-radius: 10px;
   z-index: -1;
 }
 
 .projectsBanner .projects .project-preview-content {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   position: relative;
-  margin-top: -81.25vh;
+  margin-top: -71.25vh;
   border-radius: 10px;
 }
 
 .projectsBanner .projects .project-preview-content .project-title {
   font-size: 6vh;
   color: #fafafa;
+  text-align: center;
   position: relative;
-  top: 20px;
-  left: 30px;
+  top: 120px;
 }
 
 .projectsBanner .projects .project-preview-content .project-description {
   font-size: 22px;
-  width: 50%;
-  text-align: justify;
+  text-align: center;
   color: #fafafa;
   position: relative;
-  top: 20px;
-  left: 30px;
+  top: 120px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .projectsBanner .projects .project-preview-content .project-link {
   color: #fafafa;
   position: relative;
-  top: 30px;
-  left: 30px;
+  top: 140px;
+  display: block;
+  width: 130px;
+  margin: 0 auto;
 }
 
 .projectsBanner .projects .project-preview-content .project-link button {
@@ -289,7 +287,7 @@ body {
 }
 
 .aboutBanner .aboutBanner_content .aboutLinks {
-  color: #faccfa;
+  color: #ff88ff;
 }
 
 .aboutBanner .aboutBanner_content .aboutLinks a {
@@ -405,7 +403,7 @@ body {
     color: #fafafa;
   }
   .projectsBanner .projects .project-description {
-    display: none;
+    display: block;
   }
   .aboutBanner {
     margin-top: 0vh;
