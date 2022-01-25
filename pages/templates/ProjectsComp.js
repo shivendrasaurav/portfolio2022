@@ -11,7 +11,7 @@ const Projects = (project) => {
     return(
         <div className="projects column large8 medium9 small12 center" onMouseMove={skewProj}>
 
-          <div className="project-preview" style={{background: "url('"+project.cover+"')", backgroundSize: "cover", backgroundPosition: "center"}} id={project.name[0]}>
+          <div className="project-preview" style={{background: "url('"+project.cover+"')", backgroundSize: "cover", backgroundPosition: "center"}} id={project.name}>
           </div>
           <div className="project-preview-content">
                 <h1 className="project-title" id="name1" style={{color: project.fcolor}}>{project.name}</h1>
