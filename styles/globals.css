@@ -394,16 +394,21 @@ body {
   }
   .projectsBanner .projects .project-preview-content .project-title {
     font-size: 5vh;
+    top: 0px;
+  }
+  .projectsBanner .projects .project-preview-content .project-description {
+    top: 0px;
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
   }
   .projectsBanner .projects .project-preview-content .project-link {
     color: #fafafa;
+    top: 20px;
   }
   .projectsBanner .projects .project-preview-content .project-link button {
     background: radial-gradient(circle at bottom right, #b900da 25%, #006c97 100%);
     color: #fafafa;
-  }
-  .projectsBanner .projects .project-description {
-    display: block;
   }
   .aboutBanner {
     margin-top: 0vh;
