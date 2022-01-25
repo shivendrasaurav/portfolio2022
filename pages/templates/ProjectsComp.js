@@ -1,7 +1,7 @@
 const Projects = (project) => {      
   
     const skewProj = (e) =>{
-      let skew = document.getElementById(project.name[0]);
+      let skew = document.getElementById(project.name);
     
       skew.style.setProperty('--x',(-e.clientX/1080)+'deg');
       skew.style.setProperty('--y',(-e.clientY/1080)+'deg');
