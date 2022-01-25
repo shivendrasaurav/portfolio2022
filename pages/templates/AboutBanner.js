@@ -29,7 +29,7 @@ const AboutBanner =() => {
               <Link href="https://in.linkedin.com/in/shivendra-saurav-80a8ba191"><a target="blank" className="pivot_button"><i className='fab fa-linkedin'></i></a></Link>
               <Link href="mailto:shivendrasaurav@gmail.com"><a target="blank" className="pivot_button"><i className='fas fa-envelope'></i></a></Link>
               <Link href="https://www.youtube.com/c/thecodedrop"><a target="blank" className="pivot_button"><i className='fab fa-youtube'></i></a></Link>
-              <Link href="/resume"><a target="blank" className="pivot_button"><i className='fas fa-play'></i></a></Link>
+              <Link href="/resume"><a target="blank" className="pivot_button"><i className='fas fa-file'></i></a></Link>
               <br/><br/>
             </div>
             <br/><br/>
