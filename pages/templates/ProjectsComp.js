@@ -1,5 +1,3 @@
-import projects from './data';
-
 const Projects = (project) => {      
   
     const skewProj = (e) =>{
@@ -13,12 +11,12 @@ const Projects = (project) => {
     return(
         <div className="projects column large8 medium9 small12 center" onMouseMove={skewProj}>
 
-          <div className="project-preview" style={{background: "url('"+projects[project.name][3]+"')", backgroundSize: "cover", backgroundPosition: "center"}} id={project.name[0]}>
+          <div className="project-preview" style={{background: "url('"+project.cover+"')", backgroundSize: "cover", backgroundPosition: "center"}} id={project.name[0]}>
           </div>
           <div className="project-preview-content">
-                <h1 className="project-title" id="name1" style={{color: project.fcolor}}>{projects[project.name][0]}</h1>
-                <p className="project-description" id="desc1" style={{color: project.fcolor}}>{projects[project.name][1]}</p>
-                <a className="project-link" id="link1" href={projects[project.name][2]} target="_blank" rel="noreferrer" ><button>Visit Project</button></a>
+                <h1 className="project-title" id="name1" style={{color: project.fcolor}}>{project.name}</h1>
+                <p className="project-description" id="desc1" style={{color: project.fcolor}}>{project.desc}</p>
+                <a className="project-link" id="link1" href={project.link} target="_blank" rel="noreferrer" ><button>Visit Project</button></a>
           </div>
           
 

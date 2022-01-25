@@ -4,6 +4,8 @@ import HomeBanner from './templates/HomeBanner';
 import AboutBanner from './templates/AboutBanner';
 import { useEffect } from 'react';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import projects from './templates/data';
+
 
 const Home = () => {
   
@@ -106,27 +108,27 @@ const Home = () => {
 
         
         <div id='projectsFDWEB' className='slideout'>
-          <Projects name="FDWEB"  fcolor="#fafafa"/> 
+          <Projects name={projects["FDWEB"][0]} desc={projects["FDWEB"][1]} link={projects["FDWEB"][2]} cover={projects["FDWEB"][3]} fcolor="#fafafa"/> 
         </div>
         
         <div id='projectsCORONA' className='slideoutinverse'>
-          <Projects name="CORONA" fcolor="#1e1e1e"/> 
+          <Projects name={projects["CORONA"][0]} desc={projects["CORONA"][1]} link={projects["CORONA"][2]} cover={projects["CORONA"][3]} fcolor="#1e1e1e"/> 
         </div>
         
         <div id='projectsRHAPP' className='slideout'>
-          <Projects name="REVAHACKAPP" fcolor="#fafafa"/> 
+          <Projects name={projects["REVAHACKAPP"][0]} desc={projects["REVAHACKAPP"][1]} link={projects["REVAHACKAPP"][2]} cover={projects["REVAHACKAPP"][3]} fcolor="#fafafa"/> 
         </div>
 
         <div id='projectsIJLE' className='slideoutinverse'>
-          <Projects name="IJLE" fcolor="#1e1e1e"/> 
+          <Projects name={projects["IJLE"][0]} desc={projects["IJLE"][1]} link={projects["IJLE"][2]} cover={projects["IJLE"][3]} fcolor="#1e1e1e"/> 
         </div>
 
         <div id='projectsTCD' className='slideout'>
-          <Projects name="TCDBOX" fcolor="#fafafa"/> 
+          <Projects name={projects["TCDBOX"][0]} desc={projects["TCDBOX"][1]} link={projects["TCDBOX"][2]} cover={projects["TCDBOX"][3]} fcolor="#fafafa"/> 
         </div>
 
         <div id='projectsHISAB' className='slideoutinverse'>
-          <Projects name="HISABKITAB" fcolor="#1e1e1e"/> 
+          <Projects name={projects["HISABKITAB"][0]} desc={projects["HISABKITAB"][1]} link={projects["HISABKITAB"][2]} cover={projects["HISABKITAB"][3]}  fcolor="#1e1e1e"/> 
         </div>
         <br/><br/><br/><br/>
       </div>
